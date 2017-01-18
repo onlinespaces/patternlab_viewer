@@ -1,0 +1,39 @@
+<?php
+/**
+ * @file
+ * Contains patternlab_drupal_bridge.module.
+ */
+
+use Drupal\Core\Url;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function patternlab_viewer_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Help for the patternlab_viewer module.
+    case 'help.page.patternlab_viewer':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Patternlab Style Guide module for Drupal') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements system_themes_page_alter().
+ */
+function patternlab_viewer_system_themes_page_alter(&$theme_groups) {
+  foreach ($theme_groups['installed'] as $idx => $theme) {
+    $query = ['theme' => $theme->getName()];
+
+    $theme->operations[] = array(
+      'title' => t('View Patternlab Style Guide'),
+      'url' => Url::fromRoute('patternlab_viewer.view', $query),
+      'attributes' => array('title' => t('View Patternlab Style Guide for the @theme theme', array('@theme' => $theme->info['name']))),
+    );
+  }
+}
