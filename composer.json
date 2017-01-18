@@ -1,8 +1,8 @@
 {
-  "name": "onlinespaces/patternlab_drupal_bridge",
+  "name": "onlinespaces/patternlab_viewer",
   "description": "View Pattern Lab Style Guide inside Drupal",
   "keywords": ["patternlab","drupal", "style guide"],
-  "homepage": "https://bitbucket.org/onlinespaces/patternlab-drupal-bridge",
+  "homepage": "https://bitbucket.org/onlinespaces/patternlab_viewer",
   "license": "MIT",
   "authors": [
     {

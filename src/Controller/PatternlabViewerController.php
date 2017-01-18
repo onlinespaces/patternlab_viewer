@@ -1,16 +1,16 @@
 <?php
 /**
  * @file
- * Contains \Drupal\patternlab_drupal_bridge\Controller\PatternlabDrupalBridgeController.
+ * Contains \Drupal\patternlab_viewer\Controller\PatternlabViewerController.
  */
-namespace Drupal\patternlab_drupal_bridge\Controller;
+namespace Drupal\patternlab_viewer\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
  * Provides response for the module.
  */
-class PatternlabDrupalBridgeController extends ControllerBase {
+class PatternlabViewerController extends ControllerBase {
   /**
    * Redirects to the patternlab path for the theme.
    */
