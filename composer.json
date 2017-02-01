@@ -12,8 +12,5 @@
       "homepage": "http://www.onlinespaces.com",
       "role": "Developer"
     }
-  ],
-  "require": {
-    "drupal/drupal": "8.x"
-  }
+  ]
 }
