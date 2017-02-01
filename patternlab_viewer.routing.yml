@@ -1,4 +1,4 @@
-patternlab.view:
+patternlab_viewer.view:
   path: '/admin/appearance/settings/{theme}/patternlab_viewer'
   defaults:
     _controller: '\Drupal\patternlab_viewer\Controller\PatternlabViewerController::view'
