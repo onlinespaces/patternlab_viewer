@@ -1,0 +1,5 @@
+name: Patternlab Viewer
+type: module
+description: View Pattern Lab Style Guide in Drupal
+core: 8.x
+package: Patternlab
