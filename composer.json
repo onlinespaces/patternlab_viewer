@@ -3,6 +3,7 @@
   "description": "View Pattern Lab Style Guide inside Drupal",
   "keywords": ["patternlab","drupal", "style guide"],
   "homepage": "https://bitbucket.org/onlinespaces/patternlab_viewer",
+  "type": "drupal-module",
   "license": "MIT",
   "authors": [
     {
