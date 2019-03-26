@@ -1,0 +1,7 @@
+patterlab.config:
+  type: config_object
+  label: 'Patternlab location'
+  mapping:
+    location:
+      type: text
+      label: 'Path'
