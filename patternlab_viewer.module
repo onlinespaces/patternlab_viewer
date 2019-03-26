@@ -32,7 +32,7 @@ function patternlab_viewer_system_themes_page_alter(&$theme_groups) {
 
     $theme->operations[] = array(
       'title' => t('View Patternlab Style Guide'),
-      'url' => Url::fromRoute('patternlab_viewer.view', $query),
+      'url' => Url::fromRoute('patternlab_viewer.view', $query, array('attributes' => array('target' => '_blank'))),
       'attributes' => array('title' => t('View Patternlab Style Guide for the @theme theme', array('@theme' => $theme->info['name']))),
     );
   }
