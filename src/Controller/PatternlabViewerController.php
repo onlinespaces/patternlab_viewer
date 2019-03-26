@@ -15,6 +15,6 @@ class PatternlabViewerController extends ControllerBase {
    * Redirects to the patternlab path for the theme.
    */
   public function view($theme) {
-    return new RedirectResponse("/themes/{$theme}/pattern-lab/public/index.html");
+    return new RedirectResponse("/themes/{$theme}/dist/app-pl/pl/index.html");
   }
 }
